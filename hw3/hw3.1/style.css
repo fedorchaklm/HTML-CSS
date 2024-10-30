@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 48px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+}
+
+header, section, main div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e1e1e1;
+    border-radius: 4px;
+}
+
+header, section {
+    height: 50vh;
+    background-color: #2269bb;
+}
+
+section {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 50vh;
+}
+
+main div {
+    width: 33%;
+    background-color: #15457a;
+}

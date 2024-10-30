@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hw9.4</title>
+    <style>
+        * {
+            margin: 0;
+            font-size: 50px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns:  3fr 1fr;
+            grid-template-rows: 1fr 1fr 0.5fr 0.5fr 1fr 1fr;
+            grid-template-areas:
+                    "header header"
+                    "section-top aside-top"
+                    "section-middle aside-top"
+                    "section-middle aside-bottom"
+                    "section-bottom aside-bottom"
+                    "footer footer";
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #8D8484;
+        }
+
+        section.top {
+            grid-area: section-top;
+            background-color: #776969;
+        }
+
+        section.middle {
+            grid-area: section-middle;
+            background: #643030;
+        }
+
+        section.bottom {
+            grid-area: section-bottom;
+            background-color: #441818;
+        }
+
+        div {
+            color: #fff;
+        }
+
+        header,
+        .top,
+        .middle,
+        .bottom,
+        footer {
+            display: grid;
+            justify-content: center;
+            align-content: center;
+        }
+
+        aside.top {
+            grid-area: aside-top;
+            background-color: #937575;
+        }
+
+        aside.bottom {
+            grid-area: aside-bottom;
+            background-color: #644C4C;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #BDBDBD;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <header>
+        <p>Header</p>
+    </header>
+    <section class="top">
+        <p>Content-1</p>
+    </section>
+    <section class="middle">
+        <p>Content-2</p>
+    </section>
+    <section class="bottom">
+        <p>Content-3</p>
+    </section>
+    <aside class="top">
+        <p>spam-1</p>
+    </aside>
+    <aside class="bottom">
+        <p>spam-2</p>
+    </aside>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</div>
+</body>
+
+</html>

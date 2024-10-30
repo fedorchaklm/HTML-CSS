@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 50vh;
+    font-family: Arial, sans-serif;
+}
+
+.pink {
+    background-color: #ffc0cb;
+}
+
+.black {
+    background-color: #272727;
+    color: white;
+}
+
+p {
+    text-align: center;
+    width: 80%;
+}

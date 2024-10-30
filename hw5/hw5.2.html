@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hw5.2</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(94, 157, 240);
+        }
+
+        .plane {
+            position: absolute;
+            top: 350px;
+            width: 200px;
+            height: 200px;
+            background-image: url("img/plane.svg");
+            background-size: cover;
+            animation: plane 4s ease-in-out infinite;
+        }
+
+        .cloud {
+            width: 285px;
+            height: 150px;
+            background-size: 200%;
+            animation: cloud-smoothly 1s linear infinite alternate;
+        }
+
+        .cloud-first {
+            background-image: url("img/cloud.svg");
+            animation: cloud 1s linear infinite alternate;
+        }
+
+        .cloud-second {
+            background-image: url("img/cloud_second.svg");
+        }
+
+        .cloud-third {
+            background-image: url("img/cloud_second.svg");
+        }
+
+        @keyframes plane {
+            from {
+                transform: translateX(-300px) rotateY(0deg);
+            }
+
+            49% {
+                transform: translateX(300px) rotateY(0deg);
+            }
+
+            50% {
+                transform: translateX(300px) rotateY(180deg);
+            }
+
+            to {
+                transform: translateX(-300px) rotateY(180deg);
+            }
+        }
+
+        @keyframes cloud-smoothly {
+            from {
+                transform: skew(5deg, 5deg);
+            }
+
+            to {
+                transform: skew(-5deg, -5deg);
+            }
+        }
+
+        @keyframes cloud {
+            from {
+                transform: skew(-5deg, -5deg);
+            }
+
+            to {
+                transform: skew(5deg, 5deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="cloud cloud-second"></div>
+<div class="cloud cloud-first"></div>
+<div class="cloud cloud-third"></div>
+<div class="plane"></div>
+</body>
+
+</html>

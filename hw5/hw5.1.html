@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hw5.1</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #000;
+    }
+
+    .circle {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-image: url("https://t3.ftcdn.net/jpg/05/68/47/08/360_F_568470854_Vqh4ADCnkc3nDvQ0UECMO2uTn8qSjl3a.jpg");
+      background-size: cover;
+      background-position: center;
+      box-shadow: -2px -1px 21px 1px rgba(165, 61, 186, 1);
+      animation: preloader 4s linear infinite;
+    }
+
+    @keyframes preloader {
+      from {
+        transform: rotate(-360deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+#top {
+    background-color: #df7a7a;
+}
+
+#middle {
+    background-color: #81e6e3;
+}
+
+#bottom {
+    background-color: #17e494;
+}
+
+p {
+    width: 80%;
+    text-align: center;
+}
+
+img {
+    height: 100px;
+}

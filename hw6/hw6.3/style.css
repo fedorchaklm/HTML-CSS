@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.app {
+  width: 600px;
+  margin: 50px auto;
+}
+
+form img {
+  width: 380px;
+  height: 110px;
+  object-fit: cover;
+  margin: 50px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  border: 2px solid #dfdfdf;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 80%;
+  height: 70px;
+  padding: 5px 15px;
+  margin-top: 10px;
+  font-size: 24px;
+  text-overflow: ellipsis;
+  background-color: #fafafa;
+  border: 2px solid #dfdfdf;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 80%;
+  padding: 15px 50px;
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  background-color: #68b5fa;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: #737373;
+}
+
+form > p {
+  margin-top: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #737373;
+  text-transform: uppercase;
+}
+
+.facebook {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 50px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #375185;
+}
+
+form a:any-link {
+  font-size: 20px;
+  color: #0f4072;
+}
+
+.registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 50px;
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a0a0a;
+  border: 2px solid #dfdfdf;
+}
+
+.registration a {
+  color: #0095f6;
+}

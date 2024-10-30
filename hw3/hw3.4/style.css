@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+/*-------------------- header ..........................*/
+.active-link {
+    color: #b1ba9b;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: #fff;
+    font-family: "Orbitron", sans-serif;
+}
+
+header div {
+    text-align: center;
+}
+
+header div h3 {
+    font-size: 16px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: grey;
+    font-size: 20px;
+}
+
+/*---------------- main ---------------------------*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    background-image: url('img/forest.jpg');
+    background-size: cover;
+    font-family: "Orbitron", sans-serif;
+    padding-top: 50px;
+}
+
+main p {
+    font-size: 20px;
+}
+
+main h1 {
+    font-size: 100px;
+    letter-spacing: 30px;
+}
+
+main button {
+    width: 160px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: 2s;
+}
+
+main button:hover, .blog a:hover {
+    color: #b1ba9b;
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.about {
+    background-image: url("https://scx2.b-cdn.net/gfx/news/hires/2022/forest.jpg");
+}
+
+.contact, .location {
+    align-items: flex-start;
+    padding-left: 50px;
+    background-image: url("https://c3newsmag.com/wp-content/uploads/2021/12/blue-forest-forest-resiliency-bond-reforestation-scaled.jpg");
+}
+
+.blog {
+    background-image: url("https://scx2.b-cdn.net/gfx/news/hires/2021/forest-1.jpg");
+}
+
+.about div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+.blog {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.blog article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 32%;
+    padding: 0 50px;
+}
+
+.blog a {
+    display: block;
+    width: 160px;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    background-color: #000;
+}
+
+iframe {
+    width: 400px;
+    height: 200px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+/*--------------------- section -------------------*/
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 24px;
+    font-family: "Orbitron", sans-serif;
+}
+
+.social-nav {
+    display: flex;
+    gap: 30px;
+}
+
+.social-nav img {
+    width: 40px;
+}
+
+.social-nav img:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}

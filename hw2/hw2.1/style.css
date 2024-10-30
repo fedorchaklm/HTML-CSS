@@ -1,0 +1,37 @@
+body {
+    background-color: #edeaea;
+    padding: 0 50px;
+}
+
+.container, .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 1200px;
+}
+
+.product {
+    width: 200px;
+    height: 300px;
+    border: 2px solid grey;
+    border-radius: 30px;
+    font-size: 24px;
+}
+
+img {
+    width: 150px;
+    height: 300px;
+    object-fit: contain;
+}
+
+hr {
+    margin: 20px 0 0;
+    width: 100%;
+}

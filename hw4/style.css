@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.w-1070 {
+    width: 1070px;
+    margin: 0 auto;
+}
+
+/*-------------------- header ---------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    font-family: "DM Sans", sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav a {
+    color: #19191b;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.469px;
+}
+
+.header__active-link {
+    color: #19191b;
+    border-bottom: 2px solid #5454d4;
+}
+
+.header__button {
+    width: 211.02px;
+    height: 60px;
+    border-radius: 10px;
+    background: #ff7143;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.531px;
+}
+
+/*--------------------- hero --------------------- */
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    padding-top: 68px;
+}
+
+.hero div,
+.subscription div,
+.metrics div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hero div h1 {
+    color: #19191b;
+    font-family: "DM Sans", sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: -2.501px;
+}
+
+.hero div p,
+.subscription div p,
+.metrics div p {
+    color: #696871;
+    font-family: Mulish, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.625px;
+    width: 409.426px;
+}
+
+.hero button {
+    width: 188.211px;
+    height: 60px;
+    border-radius: 10px;
+    background: #5454d4;
+    color: #fff;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.531px;
+    border: none;
+}
+
+/*------------------------ brands ------------------- */
+.brands {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 112px 0;
+}
+
+/*------------------------ subscription --------------- */
+.subscription {
+    margin-bottom: 60px;
+}
+
+.subscription div h3,
+.metrics div h3 {
+    color: #19191b;
+    font-family: "DM Sans", sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: -1.563px;
+}
+
+.subscription div p {
+    width: 459px;
+}
+
+.subscription a,
+.metrics a {
+    color: #5454d4;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.531px;
+}
+
+/*------------------------- metrics --------------------------- */
+.metrics div p {
+    width: 409px;
+}
+
+/*----------------------- icons --------------------- */
+.icons {
+    margin: 100px 0;
+}
+
+.icons__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 307px;
+}
+
+.icons__item h4 {
+    color: #19191b;
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.75px;
+}
+
+.icons__item p {
+    color: #696871;
+    text-align: center;
+    font-family: Mulish, sans-serif;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+}
+
+/*--------------------------------- plan ----------------------*/
+.plan {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.plan h2 {
+    width: 523px;
+    color: #19191b;
+    font-family: "DM Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1.876px;
+}
+
+.future-product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+.tariff {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 344px;
+    height: 65px;
+    background-color: #f7f7fb;
+    color: #19191b;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+.month,
+.year {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.year {
+    height: 55px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px 0 0 10px;
+    background-color: #5454d4;
+}
+
+.plan ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.plan li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 34px 0 27px 0;
+    width: 330px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    color: #696871;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.563px;
+}
+
+.plan li h2 {
+    color: #000;
+    font-family: "DM Sans", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -1.034px;
+}
+
+.plan li h2 span {
+    font-size: 28px;
+}
+
+.plan li button {
+    width: 285px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #eae9f2;
+    background: #fff;
+    color: #5454d4;
+}
+
+li.plan__active-link {
+    color: rgba(255, 255, 255, 0.70);
+    background-color: #ff7143;
+    box-shadow: 0 32px 34px 0 rgba(255, 112, 59, 0.32);
+    transform: scale(1.1);
+}
+
+li.plan__active-link h2 {
+    color: #fff;
+}
+
+li.plan__active-link button {
+    background-color: #9F3919;
+    color: #fff;
+    border: none;
+}
+
+/*------------------------ footer ----------------------------- */
+footer {
+    color: #e4e4e4;
+    font-family: Roboto, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 34px;
+}
